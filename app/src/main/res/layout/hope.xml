@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    android:layout_centerVertical="true"
+    android:columnCount="4"
+    android:rowCount="2"
+    >
+    <ImageView
+        android:id="@+id/hope1"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:layout_gravity="fill_vertical"
+        android:adjustViewBounds="true"
+        android:maxHeight="200dp"
+        android:maxWidth="200dp"
+        android:src="@drawable/hope1"
+        android:layout_width="162dp"
+        android:layout_height="219dp" />
+    <ImageView
+        android:id="@+id/hope2"
+        android:adjustViewBounds="true"
+        android:maxHeight="200dp"
+        android:maxWidth="200dp"
+        android:src="@drawable/hope2"
+        android:layout_weight="1"
+        android:layout_width="166dp"
+        android:layout_height="237dp" />
+    <ImageView
+        android:id="@+id/hope3"
+        android:layout_width="159dp"
+        android:layout_height="262dp"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:adjustViewBounds="true"
+        android:maxHeight="200dp"
+        android:maxWidth="200dp"
+        android:src="@drawable/hope3" />
+
+    <ImageView
+        android:id="@+id/hope4"
+        android:layout_width="160dp"
+        android:layout_height="215dp"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:adjustViewBounds="true"
+        android:maxHeight="200dp"
+        android:maxWidth="200dp"
+        android:src="@drawable/hope4" />
+
+
+
+</GridLayout>

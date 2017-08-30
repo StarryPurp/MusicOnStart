@@ -21,6 +21,18 @@
         <activity android:name=".fantasy"
             android:label="몽환">
         </activity>
+        <activity android:name=".sour"
+            android:label="상큼">
+        </activity>
+        <activity android:name=".sweet"
+            android:label="달콤">
+        </activity>
+        <activity android:name=".hope"
+            android:label="설렘">
+        </activity>
+        <activity android:name=".showpics"
+            android:label="보여주기">
+        </activity>
     </application>
 
 </manifest>

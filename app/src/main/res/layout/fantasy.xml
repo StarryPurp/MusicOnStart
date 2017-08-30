@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
+    android:layout_margin="30dp"
+    android:layout_centerVertical="true"
+    android:columnCount="4"
+    android:rowCount="2"
+    android:clickable="true"
     >
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="5dp"
-        android:clickable="true"
-        android:onClick="showpic"
-    >
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:maxWidth="200dp"
-            android:maxHeight="200dp"
-            android:adjustViewBounds="true"
-            android:src="@drawable/fan1" />
+            <ImageView
+                android:id="@+id/fan1"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:layout_gravity="fill_vertical"
+                android:adjustViewBounds="true"
+                android:maxHeight="200dp"
+                android:maxWidth="200dp"
+                android:src="@drawable/fan1"
+                android:layout_width="162dp"
+                android:layout_height="219dp" />
+            <ImageView
+                android:id="@+id/fan2"
+                android:adjustViewBounds="true"
+                android:maxHeight="200dp"
+                android:maxWidth="200dp"
+                android:src="@drawable/fan2"
+                android:layout_weight="1"
+                android:layout_width="166dp"
+                android:layout_height="237dp" />
+    <ImageView
+        android:id="@+id/fan3"
+        android:layout_width="159dp"
+        android:layout_height="262dp"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:adjustViewBounds="true"
+        android:maxHeight="200dp"
+        android:maxWidth="200dp"
+        android:src="@drawable/fan4" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:maxWidth="200dp"
-            android:maxHeight="200dp"
-            android:adjustViewBounds="true"
-            android:src="@drawable/fan2"/>
+    <ImageView
+        android:id="@+id/fan4"
+        android:layout_width="160dp"
+        android:layout_height="215dp"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:adjustViewBounds="true"
+        android:maxHeight="200dp"
+        android:maxWidth="200dp"
+        android:src="@drawable/fan3" />
 
-        </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:clickable="true"
-        android:onClick="showpic">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:maxWidth="200dp"
-            android:maxHeight="200dp"
-            android:adjustViewBounds="true"
-            android:src="@drawable/fan3"/>
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:maxWidth="200dp"
-            android:maxHeight="200dp"
-            android:adjustViewBounds="true"
-            android:src="@drawable/fan4"/>
-    </LinearLayout>
 
-</LinearLayout>
+</GridLayout>

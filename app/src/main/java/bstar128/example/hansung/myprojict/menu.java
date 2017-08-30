@@ -33,7 +33,21 @@ public class menu extends Activity{
         sourbut.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                intent=new Intent(getApplicationContext(),fantasy.class);
+                intent=new Intent(getApplicationContext(),sour.class);
+                startActivity(intent);
+            }
+        });
+        sweetbut.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                intent=new Intent(getApplicationContext(),sweet.class);
+                startActivity(intent);
+            }
+        });
+        hopbut.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                intent=new Intent(getApplicationContext(),hope.class);
                 startActivity(intent);
             }
         });
